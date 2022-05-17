@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Organisation Name</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8">
+    <meta name="viewport">
+    <meta author="sikaloba-Muzyamba-icu"/>
+	<meta description="website-project"/>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<style>
+		.h-error strong 
+		{
+			text-align: center;
+			font-size: smaller;
+			color: red;
+			padding: 1%;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: medium;
+			border: 2px solid red;
+			display: flex;
+			flex-direction: row nowrap;
+			justify-content: center;
+		}
+		nav  li 
+		{
+			text-transform: uppercase;
+			font-family: 'mesmerize';
+			font-size-adjust: 0.58;
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+		.progress-counter, .companik h5,.companik h6
+		{
+			color:orange;
+		}
+		.progress-counter,.notice,.progress-bar 
+		{
+			font-weight: 600;
+			opacity: .3;
+		}
+		.companik 
+		{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			font-weight: 600;
+		}
+		.companik h5 
+		{
+			padding-bottom: 5%;
+			padding-top: 1%;
+		}
+		.static-exe 
+        {
+            /* border: 2px solid green; */
+            display: none;
+            flex-direction: row nowrap;
+            justify-content:center;
+            background-color:rgb(61, 58, 58);
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            opacity: 1;
+            z-index: 2;
+            padding: 10px;
+			height:100px;
+        }
+        .static-exe h6 
+        {
+            color: white;
+		}
+		.static-exe form .form-group 
+		{
+			display:flex;
+			flex-direction:row nowrap;
+			justify-content:center;
+			width:100%;
+		}
+		.static-exe form input 
+		{
+			width:80%;
+		}
+		
+		@media (max-width: 900px)
+        {
+            .form-inline 
+            {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                margin-top: 10%;
+                margin-bottom: 15%;
+                width: 100%;
+            }
+			.static-exe 
+        	{ 
+				height: 90px;
+			}
+	
+
+        }
+		.nav-item a 
+		{
+			font-family:'Comic Sans MS';
+		}
+	</style>
+	<script src="jquery.js"></script>
+	<script src="anime.js" type="text/javascript"></script>
+	<script>
+		$(function(){
+			$('#search-icon').click(function(){
+				$(this).css({'color':'red'});
+				$("#f-wrapper").slideToggle(2000);
+			});
+		});
+	</script>
+</head>
+	<body>
+	<div class="static-exe" id="f-wrapper">
+        	<form method="GET" action="search.html " 
+					class="form-inline 
+							navbar-form navbar-left mx-6 my-lg-0">
+					<div class="form-group">
+						<input type="search" class="form-control" 
+												name="ref" placeholder="Search..."  />
+						<button class="btn btn-success"><i class="fa fa-search"></i></button>
+					</div> 
+			</form>
+    </div>
+		<main>
+			<!-- top header -->
+			<div class="header-wrapper">
+				<div class="header-fader">
+					<div class="top-nav">
+						<div class="container">
+							<div class="top-nav-items">
+								<div>
+									<img src="assets/logo/nomddress_logo.jpg" alt="nomddress-logo" 
+																style="width:50px;border-radius: 50px;"> 
+																	&nbsp <span style="font-weight:800;color:#e9ebf4;">School Name</span>
+								</div>
+								
+								<i class="fas fa-search"  id="search-icon"></i>
+							</div>
+						</div>
+					</div><!--top header closed-->
+					
+					<!--carousel-->
+					<div class="super-first-burner">
+						<div class="super-burner-fader">
+							<div class="container">
+								<div class="row super-burner-words">
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+									
+										<!--slider here now -->
+										<div class="carorl-wrapper">
+											<div class="carousel slide" data-ride="carousel" id="bakery_slider">
+												<div class="carousel-inner">
+
+													<!--image slide 1 -->
+													<div class="carousel-item active">
+														<div data-interval="100">
+															<div class="carol-text">
+																<span>CONSULTANCY</span>
+																<p>To increase access to science and research facilities in all districts of Zambia
+																	,where our school is present.</p>
+															</div>
+															<a href="about_us.html " class="btn btn-sm btn-success">ReadMore</a>
+														</div>
+													</div>
+
+													<!--image slide 2 -->
+													<div class="carousel-item">
+														<div data-interval="100">
+															<div class="carol-text">
+																<span>ADVOCACY</span>
+																<p>
+																	To improve livelihoods of the most poor, vulnerable and less privileged people,
+																	that's what we advocate for as a school.
+																</p>
+															</div>
+															<a href="about_us.html " class="btn btn-sm btn-success">ReadMore</a>
+														</div>
+													</div>
+
+													<!--image slide 2 -->
+													<div class="carousel-item">
+														<div data-interval="100">
+															<div class="carol-text">
+																<span>RESEARCH</span>
+																<p>
+																	To create technology and research facilities in all provinces where
+																	Scool is present.
+																</p>
+															</div>
+															<a href="about_us.html " class="btn btn-sm btn-success">ReadMore</a>
+														</div>
+													</div>
+
+
+												</div>
+											</div><!-- carousel closing here -->
+										</div>
+
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!--Burner Closed-->
+
+					<!-- nav-->
+					<nav class="navbar navbar-expand-sm navbar-dark ">
+						<div class="container">
+							<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myTopResponsiveNav">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse text-center" id="myTopResponsiveNav">
+							
+								<ul class="navbar-nav m-auto">
+									<li class="nav-item"><a href="intro.html">Introduction</a></li>
+									<li class="nav-item"><a href="#contact">Contact Us</a></li>
+									<li class="nav-item"><a href="publications.html ">News</a></li>
+									<li class="nav-item"><a href="jobs.html " >Timetables</a></li>
+									<li class="nav-item"><a href="about_us.html ">Curriculum</a></li>
+									<li class="nav-item"><a href="location.html ">Results</a></li>
+									<li class="nav-item"><a href="gallery.html ">Staff</a></li>
+							
+								</ul>
+								
+							</div>
+							
+						</div><!-- containerv closed -->
+					</nav><!--Nav Closed-->
+				</div>
+			</div>
+
+			<!--About Our Organization-->
+			<div class="about-us" id="about-us">
+				<div class="container">
+					<div class="row m-auto">
+						<div class="about-title" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h6>The School's Background.</h6>
+						</div>
+					</div>
+					<div class="row about-content">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 my-3 my-*-0">
+							NOMDDRES is an acronym which stands for Nomdad Development Research. 
+							It is a not for profit Non-Governmental Organization (NGO) 
+							and is registered with the Ministry of Community Development.
+							It started its operation in Zambia in the year 2016 and has created a unique model
+							of working to help the rural and peri-urban poor, vulnerable and disadvantaged through engagement 
+							with local communities (i.e. women, youths, children and men) in Science, Research and Technology in order
+							to prepare them for economic development in Zambia and over. The key to NOMDDRES’s approach is partnership and
+							creating solutions that are sustainable after NOMDDRES departs.
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 my-3 my-*-0">
+							With the growing adverse  impact of climate change on rural livelihoods especially,
+							the global concerns over food prices and the ever present human cost of HIV/AIDS,
+							the work that NOMDDRES facilitates is growing in importance and thus of interest to donors.
+							There is a current trend amongst donors in Zambia to not only support Zambian government agencies but
+							to also build national civil society by channelling funds through independent NGOs like NOMDDRES. 
+							This creates opportunities for NOMDDRES to attract increased donor funding for managing developmental 
+							interventions in rural and peri - urban communities.
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 my-3 my-*-0">
+							<h6>Our School Vision.</h6>
+							A world in which all vulnerable, poor, voiceless and disadvantaged women, youths, 
+							children and men reach their full potential of using their various skills and 
+							abilities in all the 10 provinces of Zambia. 
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 my-3 my-*-0">
+							<h6> Our School Mission Statement.</h6>
+								Our mission is to provide research, training, advocacy and mentoring in Education (capacity building),
+								Governance, Livelihoods and Advocacy. This will ensure that we help provide a platform that supports
+								various skills and abilities through the development of inclusive communities that foster talent
+								and create value in all districts of Zambia 
+								<!-- <details>
+									<a href="about_us.html " class="btn btn-success">Read More</a>
+								</details> -->
+						</div>
+					</div>
+				</div>
+			</div><!--Close About-->
+			
+			 <!-- footer-->
+			 <footer class="footer-wrapper">
+				<div class="container">
+					<div class="row m-auto">
+						<!--Services Offered-->
+						<div class="f col-xs-4 col-sm-4 col-md-4 col-lg-4">
+							<h4><b>Services</b></h4>
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item"><a href="#services">Consultancy</a></li>
+								<li class="list-group-item"><a href="#services">Advocacy</a></li>
+								<li class="list-group-item"><a href="#services">Research</a></li>
+							</ul>
+						</div>
+		
+						<!--Contacts-->
+						<div class=" f col-xs-4 col-sm-4 col-md-4 col-lg-4">
+							<h4>Contacts</h4>
+							<div class="footer-book">
+								<ol class="list-group list-group-flush">
+									<li class="list-group-item"><i class="fas fa-phone f-x2"></i> &nbsp ( +260 ) xxx xxx xxx</li>
+									<li class="list-group-item"><i class="fas fa-sms "></i> &nbsp orgname@org.com</li>
+								</ol>
+							  
+							</div>
+						</div>
+						<!-- media-->
+						<div class="f col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center">
+							<div class="media-links">
+								<a href=""><i class="fab fa-facebook-f"></i> &nbsp | &nbsp  </a>
+								<a href=""><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+							</div>
+							<div style="padding-top:15%;font-size:smaller">
+								<span><i class="fas fa-home fa-3x"></i> &nbsp <a href="index.html ">Home</a></span>
+							</div>
+							<div style="padding-top:15%;font-size:smaller">
+								<span><i class="fas fa-key"></i> &nbsp <a href="login.html ">Administrators</a></span>
+							</div>
+			
+						   
+						</div>
+					</div><!-- close footer row-->
+				</div>
+				<hr><br> 
+				<h6>&copy 2021</h6>
+			</footer>
+			
+		
+		</main>
+	</body>
+	<!--Bootstrap & Jquery CDN -->
+	<script>
+		
+	</script>
+	<script src="jquery.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+</html>

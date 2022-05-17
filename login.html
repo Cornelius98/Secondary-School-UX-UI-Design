@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Private | Access</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+    <script src="jquery.js"></script>
+	<script src="anime_copy.js" type="text/javascript"></script>
+    <style>
+    
+    .loader-notifier .fa-home 
+    {
+        color: orange;
+    }
+    .loader-notifier 
+    {
+        color: orange;;
+    }
+    .notice 
+    {
+        font-size: smaller;
+        color: rgb(167, 167, 167);
+    }
+    .loader-wrapper 
+    {
+        width: 100%;
+        background-color: rgb(62, 58, 63);
+        z-index: 2 ;
+        height: 1000px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%,-50%);
+        /* border: 2px solid red; */
+    }
+    .loader-fader 
+    {
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        height: 100%;
+        opacity: .945654;
+
+    }
+    .loader-wrapper 
+    {
+        background-image: url(assets/loader/william-iven-gcsNOsPEXfs-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .loader-wrapper .loader-notifier
+    {
+        /* border: 2px solid red; */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%,-50%);
+        width: 50%;
+        text-align: center;
+        
+    }
+    .loader-wrapper h4 
+    {
+        text-align: center;
+    }
+    .progress-div 
+    {
+        background-color: rgb(0, 0, 0);
+        height: 30px;
+        width: 100%;
+        border-radius: 5px;
+        padding-top: 3px;
+    }
+    .progress-bar 
+    {
+        background-color: orange;
+        border-radius: 5px;
+        height: 25px;
+        width: 200px;  
+    }
+    .notice 
+    {
+        color: orange; font-weight: 600; font-weight: 600;
+
+
+    }
+    .progress-counter, .companik h5,.companik h6
+    {
+        color:orange;
+    }
+    .progress-counter,.notice,.progress-bar 
+    {
+        font-weight: 600;
+        opacity: .3;
+    }
+    .companik 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+    }
+    .companik h5 
+    {
+        padding-bottom: 5%;
+        padding-top: 1%;
+    }
+    .e-notice 
+    {
+        text-align: center;
+        color: white;
+        background-color: red;
+        border: 2px solid brown;
+        width: 100%;
+        padding: 1%;
+        border-radius: 50px;
+    }
+    section form 
+    {
+        padding: 15%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #post-wrapper-fader
+    {
+        /* background-color: black;
+        opacity: .974;
+        color: white; */
+    }
+    .bottom-tabs 
+    {
+        color: white;
+        width: 100%;
+        /* border: 2px solid yellow; */
+    }
+    .bottom-tabs a h6
+    {
+        padding: 10px;
+    }
+    .bottom-tabs h6 
+    {
+        margin-left: 5%;
+        color: grey;
+        /* border: 2px solid red; */
+    }
+     #hero
+    {   background-image:url('assets/Admins/3506330.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center; */
+    }
+    .hero-fader
+    {   background-color: black; 
+        opacity: .8556;
+    }
+    .cover 
+    {
+        padding: 10% 5% 50% 5%;
+    }
+    hr 
+    {
+        background-color: #eee;
+    }
+    .content-forms 
+    {
+        /* border: 2px solid red; */
+        background-color: white;
+        height: 500px;
+    }
+    .content-forms input[ type="text" ],
+    .content-forms textarea,
+        .content-forms input[ type="password" ]
+    {
+        border: none;
+        background-color: white;
+        color: black;
+        border-radius: 0;
+        border-bottom: 2px solid grey;
+    }
+    .content-forms input[ type="text" ]
+    {
+        margin-bottom : 3%;
+    }
+    .content-forms input[ type="text" ],
+        .content-forms input[ type="password" ]
+    {
+        background-color: white;
+        opacity: .7545;
+        font-weight: 500;
+    }
+    .cover button[type="submit"]
+    {
+        margin-top: 15%;
+    } 
+    .user-avartar 
+    {
+        /* border: 2px solid yellow; */
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    .fa-user-tie 
+    {
+        color: black;
+    }
+    .row 
+    {
+        /* border: 2px solid red; */
+        padding-bottom: 50%;
+    }
+    aside 
+    {
+        /* border:2px solid green; */
+    }
+    .carorl-wrapper 
+    {
+        /* border: 2px solid pink; */
+        margin-top: 30%;
+        padding-bottom: 20%;
+    }
+  
+    .user-avartar span 
+    {
+        background-color: grey;
+        padding: 5%;
+        border-radius: 40px;
+    }
+    .user-avartar .fa-user-tie 
+    {
+        color: white;
+    }
+    .carol-text 
+    {
+        color: white;
+        text-align: center;
+    }
+    .carol-text h5 
+    {
+        color: #eee;
+        padding-top: 5%;
+        text-transform: uppercase;
+        font-size: medium;
+    }
+    .icon-cover
+    {
+        display: inline-block;
+        align-items: center;
+        background-color: orange;
+        padding: 3%;
+        border-radius: 40px;
+    }
+    .icon-cover i 
+    {
+        color: black;
+    }
+
+    </style>
+   
+</head>
+<body>
+<div id ="hero">
+    <div class="hero-fader">
+        <div class="container">
+            <div id="post-wrapper">
+                <div id="post-wrapper-fader">
+                    <div class="row">
+                        <aside class="col-sm-12 col-md-7 col-lg-7 col-xl-7">
+
+
+
+                           <!--slider here now -->
+                            <div class="carorl-wrapper">
+                                <div class="carousel slide" data-ride="carousel" id="bakery_slider">
+                                    <div class="carousel-inner">
+
+                                        <!--image slide 1 -->
+                                        <div class="carousel-item active">
+                                            <div data-interval="10">
+                                                <div class="carol-text">
+                                                    <span class="icon-cover"><i class="fas fa-user-lock fa-2x"></i></span>
+                                                    <h5>ORGANISATION NAME</h5>
+                                                    <p>
+                                                        Simply Sign in to Continue To Your Acconnt
+                                                    </p>
+                                                    <a href="index.html " class="btn btn-xs btn-outline-warning">Home</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--image slide 2 -->
+                                        <div class="carousel-item">
+                                            <div data-interval="10">
+                                                <div class="carol-text">
+                                                    <span class="icon-cover"><i class="fas fa-user-clock fa-2x"></i></span>
+                                                    <h5>ORGANISATION NAME</h5>
+                                                    <p> Remember to Always Sign Out.</p>
+                                                    <a href="index.html " class="btn btn-xs btn-outline-warning">Home</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--image slide 2 -->
+                                        <div class="carousel-item">
+                                            <div data-interval="10">
+                                                <div class="carol-text">
+                                                    <span class="icon-cover"><i class="fas fa-eye-slash fa-2x"></i></i></span>
+                                                    <h5>ORGANISATION NAME</h5>
+                                                    <p>
+                                                        Remember ,never share your Access Code.
+                                                    </p>
+                                                    <a href="index.html " class="btn btn-xs btn-outline-warning">Home</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div><!-- carousel closing here -->
+                            </div>
+                        </aside>
+
+                        <section class="content-forms col-sm-12 col-md-5 col-lg-5 col-xl-5">
+                            <div class="cover">
+                                    <div class="error-notice">
+                                    </div>
+                                <div class="user-avartar">
+                                        <span>
+                                            <i class="fas fa-user-tie fa-3x "></i>
+                                        </span>
+                                </div>
+                              
+                                
+                            </div>
+                        </section>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--close container -->
+    </div>
+</div>
+<!--Bootstrap & Jquery CDN -->
+<script src="jquery.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
