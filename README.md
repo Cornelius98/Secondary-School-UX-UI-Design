@@ -5,7 +5,7 @@
 Secondary school design UI/UX is designed to show a fancy display of a secondary school. The design has; home, introduction to the school, gallery, GPS school location and published on the website. The design is simple and easy to use
 
 Available pages and sections include:
-- home
+- Home
 - Introduction
 - Job offers
 - School GPS location
@@ -26,7 +26,7 @@ To successfully run the project, the following are required;
 - Internet access, to load CDN resources
 - Browser (Preferably Edge, Chrome, Mozilla)
 - Bootstrap v4.3.1 support
-- fontawesome V5.11.2 support
+- Fontawesome V5.11.2 support
 - JavaScript support
 - JQuery support
 
