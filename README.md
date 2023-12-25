@@ -1,4 +1,3 @@
-
 # Secondary-School-UX-UI-Design
 
 ## Description
@@ -44,7 +43,7 @@ The installation procedure to run the project on your local machine is as follow
 
 For additional assistance using this library, contact the developer experience (DX) team via;
 - [WhatsApp Developer](https://wa.me/+260977742472)
-- [Email Developer](https://mailto:corneliuskasokola101@gmail.com)
+- [Email Developer](mailto:corneliuskasokola101@gmail.com)
 
 ## License
 
